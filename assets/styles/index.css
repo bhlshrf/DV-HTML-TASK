@@ -30,10 +30,15 @@ input[type=password] {
     /* padding-bottom: .4rem; */
 }
 
+select,
 .pointer,
-.material-textfield > span,
-select {
+.material-textfield > span {
     cursor: pointer;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 .main-container {
@@ -138,9 +143,15 @@ select {
     transform: translateY(-50%) scale(.9);
 }
 
+.material-select > span,
 .material-textfield > span {
     position: absolute;
     right: .5rem;
+    cursor: pointer;
+}
+
+.material-select > span{
+    pointer-events: none;
 }
 
 .invalid-input > input {

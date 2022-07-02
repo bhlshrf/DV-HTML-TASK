@@ -6,7 +6,7 @@ function handleEmailInput() {
     return errorMsg;
 }
 
-function handlePassword() {
+function handlePasswordInput() {
     const password1 = document.getElementById('password1');
     const password2 = document.getElementById('password2');
 
@@ -65,7 +65,7 @@ function handelFormSubmit(e) {
     e.preventDefault(); 
 
     const emailValidation = handleEmailInput();
-    const passwordsValidation = handlePassword();
+    const passwordsValidation = handlePasswordInput();
 
     if(passwordsValidation || emailValidation)
         return false;
@@ -73,6 +73,7 @@ function handelFormSubmit(e) {
     alert('The form is valid and can be submitted')
     return true;
 }
+
 function isValidEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
 }
