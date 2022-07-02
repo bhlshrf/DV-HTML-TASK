@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<htmlp lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,12 +14,12 @@
 <body>
     <div class="main-container">
         <div class="column-container">
-            <img class="logo" src="./assets/imgs/devtailor-logo.svg" />
+            <img class="logo" src="./assets/imgs/devtailor-logo.svg" alt="devtailor logo" />
             <span class="header-label vertical-margin">Let's get started</span>
             <form class="column-container" onsubmit="return handelFormSubmit(event)">
                 
                 <div class="material-select vertical-margin">
-                    <select>
+                    <selectp aria-label="Countries">
                         <option value="1">Estonia</option>
                         <option value="2">Other Country</option>
                     </select>
@@ -28,18 +28,18 @@
                 </div>
 
                 <div class="material-textfield vertical-margin">
-                    <input id="email" type='email' placeholder=" " oninput="handleEmailInput()" />
+                    <input id="email" type='email' placeholder=" " oninput="handleEmailInput()" aria-label="Email"/>
                     <label>Email</label>
                 </div>
 
                 <div class="material-textfield vertical-margin">
-                    <input id="password1" type="password" placeholder=" " oninput="handlePasswordInput()" />
+                    <input id="password1" type="password" placeholder=" " oninput="handlePasswordInput()" aria-label="Password"/>
                     <label>Created your password</label>
                     <span class="material-icons-outlined" onclick="togglePassword(this)">visibility</span>
                 </div>
 
                 <div class="material-textfield vertical-margin">
-                    <input id="password2" type="password" placeholder=" " oninput="handlePasswordInput()" />
+                    <input id="password2" type="password" placeholder=" " oninput="handlePasswordInput()" aria-label="Confirm Password" />
                     <label>Re-enter password</label>
                     <span class="material-icons-outlined" onclick="togglePassword(this)">visibility</span>
                 </div>
