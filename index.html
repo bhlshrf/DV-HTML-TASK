@@ -13,9 +13,10 @@
     <div class="main-container">
         <div class="column-container">
             <img src="./assets/imgs/devtailor-logo.svg" />
-            <span>Let's get started</span>
+            
+            <span class="header-label">Let's get started</span>
 
-            <form class="column-container" onsubmit="handelFormSubmit()">
+            <form class="column-container" onsubmit="return handelFormSubmit(event)">
                 
                 <div class="material-select">
                     <select>
@@ -26,7 +27,7 @@
                 </div>
 
                 <div class="material-textfield">
-                    <input type='email' placeholder=" " oninput="handleEmailInput(this)" />
+                    <input id="email" type='email' placeholder=" " oninput="handleEmailInput()" />
                     <label>Email</label>
                 </div>
 

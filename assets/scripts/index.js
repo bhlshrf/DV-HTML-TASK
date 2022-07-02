@@ -1,7 +1,9 @@
-function handleEmailInput(e) {
-    let errorMsg = validateEmail(e.value);
+function handleEmailInput() {
+    const email = document.getElementById('email');
+    let errorMsg = validateEmail(email.value);
 
-    renderInvalidState(e, errorMsg, 'Email')
+    renderInvalidState(email, errorMsg, 'Email')
+    return errorMsg;
 }
 
 function handlePassword() {
@@ -13,6 +15,8 @@ function handlePassword() {
 
     const errorMsg2 = validatePassword(password2.value, password1.value);
     renderInvalidState(password2, errorMsg2, 'Re-enter password')
+
+    return errorMsg || errorMsg2;
 }
 
 function togglePassword(e) {
@@ -57,6 +61,18 @@ function validatePassword(value, value2) {
     return errorMsg;
 }
 
+function handelFormSubmit(e) {
+    e.preventDefault(); 
+
+    const emailValidation = handleEmailInput();
+    const passwordsValidation = handlePassword();
+
+    if(passwordsValidation || emailValidation)
+        return false;
+
+    alert('The form is valid and can be submitted')
+    return true;
+}
 function isValidEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
 }
