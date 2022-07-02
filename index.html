@@ -7,7 +7,7 @@
     <title>DevTailor HTML Task - Bahaa Alsharif</title>
     <script defer src="assets/scripts/index.js"></script>
     <link rel="stylesheet" href="assets/styles/index.css" media="all">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
 </head>
 
@@ -16,7 +16,7 @@
         <div class="column-container">
             <img class="logo" src="./assets/imgs/devtailor-logo.svg" alt="devtailor logo" />
             <span class="header-label vertical-margin">Let's get started</span>
-            <form class="column-container" onsubmit="return handelFormSubmit(event)">
+            <form class="column-container" onsubmit="return $.handelFormSubmit(event)">
                 
                 <div class="material-select vertical-margin">
                     <select aria-label="Countries">
@@ -28,20 +28,20 @@
                 </div>
 
                 <div class="material-textfield vertical-margin">
-                    <input id="email" type='email' placeholder=" " oninput="handleEmailInput()" aria-label="Email"/>
+                    <input id="email" type='email' placeholder=" " oninput="$.handleEmailInput()" aria-label="Email"/>
                     <label>Email</label>
                 </div>
 
                 <div class="material-textfield vertical-margin">
-                    <input id="password1" type="password" placeholder=" " oninput="handlePasswordInput()" aria-label="Password"/>
+                    <input id="password1" type="password" placeholder=" " oninput="$.handlePasswordInput()" aria-label="Password"/>
                     <label>Created your password</label>
-                    <span class="material-icons-outlined" onclick="togglePassword(this)">visibility</span>
+                    <span class="material-icons-outlined" onclick="$.togglePassword(this)">visibility</span>
                 </div>
 
                 <div class="material-textfield vertical-margin">
-                    <input id="password2" type="password" placeholder=" " oninput="handlePasswordInput()" aria-label="Confirm Password" />
+                    <input id="password2" type="password" placeholder=" " oninput="$.handlePasswordInput()" aria-label="Confirm Password" />
                     <label>Re-enter password</label>
-                    <span class="material-icons-outlined" onclick="togglePassword(this)">visibility</span>
+                    <span class="material-icons-outlined" onclick="$.togglePassword(this)">visibility</span>
                 </div>
 
                 <label class="pointer vertical-margin">
