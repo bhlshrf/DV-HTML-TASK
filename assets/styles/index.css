@@ -160,3 +160,38 @@ select {
 .invalid-input > label {
     color: red !important;
 }
+
+
+.blur-top {
+    position: absolute;
+    top: 0;
+    right: 30%;
+}
+.blur-top-left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.blur-top-left-2 {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.blur-bottom-right {
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+}
+.blur-bottom-right-2 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.blur-effect-green {
+    box-shadow: 0 0 200px 50px #0f0;
+}
+
+.blur-effect-blue {
+    box-shadow: 0 0 200px 50px #00f;
+}
