@@ -1,15 +1,84 @@
 :root {
+
 }
 
 body,
 html {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', 'Roboto', sans-serif;
 }
 
+a {
+    color: #2a4ea9;
+    text-decoration: none;
+}
+
+input[type=submit] {
+    color: #fff;
+    background: #2a4ea9;
+    border: none;
+    border-radius: 4px;
+    padding: .7rem;
+    font-weight: bold;
+}
+
+input[type=password] {
+    letter-spacing: .3rem;
+    /* font-size: 20px; */
+    /* padding-bottom: .4rem; */
+}
+
+.pointer,
+.material-textfield > span,
+select {
+    cursor: pointer;
+}
+
+.main-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 17rem;
+}
+
+.header-label {
+    font-size: 1.2rem;
+}
+.login-label {
+    text-align: start;
+}
+
+.vertical-margin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.logo {
+    margin: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-font {
+    font-size: .9rem;
+}
+
+
+/* Material Select and Textfield styles */
 .material-select,
 .material-textfield {
     position: relative;
@@ -69,92 +138,14 @@ html {
     transform: translateY(-50%) scale(.9);
 }
 
-.invalid-input > input {
-    border-color: red !important;
-}
-.invalid-input > label {
-    color: red !important;
-}
-
 .material-textfield > span {
     position: absolute;
     right: .5rem;
 }
 
-.main-container {
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    height: 100%;
+.invalid-input > input {
+    border-color: red !important;
 }
-
-.column-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 17rem;
-}
-
-.pointer,
-.material-textfield > span,
-select {
-    cursor: pointer;
-}
-
-input[type=submit] {
-    color: #fff;
-    background: #2a4ea9;
-    border: none;
-    border-radius: 4px;
-    padding: .7rem;
-}
-
-.header-label {
-    font-size: 1.2rem;
-}
-.login-label {
-    text-align: start;
-}
-
-.vertical-margin {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.logo {
-    margin: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-input[type=password] {
-    letter-spacing: .3rem;
-    /* font-size: 20px; */
-    /* padding-bottom: .4rem; */
-}
-
-a {
-    color: #2a4ea9;
-    text-decoration: none;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.small-font {
-    font-size: .9rem;
-}
-
-@media not all and (min-resolution:.001dpcm) {
-    @supports (-webkit-appearance:none) {
-
-        .pure-material-textfield-outlined>input,
-        .pure-material-textfield-outlined>input+span,
-        .pure-material-textfield-outlined>input+span::before,
-        .pure-material-textfield-outlined>input+span::after {
-            transition-duration: 0.1s;
-        }
-    }
+.invalid-input > label {
+    color: red !important;
 }
