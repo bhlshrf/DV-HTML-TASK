@@ -25,7 +25,7 @@ function togglePassword(e) {
 
     password.setAttribute('type', isHidden ? 'text' : 'password')
     
-    e.innerHTML = isHidden ? 'hide' : 'show';
+    e.innerHTML = isHidden ? 'visibility_off' : 'visibility';
 }
 
 function renderInvalidState(e, errorMsg, validMsg) {
