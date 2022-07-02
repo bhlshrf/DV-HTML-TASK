@@ -84,6 +84,12 @@ html {
     max-width: 20vw;
 }
 
+.pointer,
+.material-textfield > span,
+select {
+    cursor: pointer;
+}
+
 @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {
 
