@@ -1,6 +1,4 @@
 :root {
-    --pure-material-primary-rgb: rgb(0, 0, 255);
-    --pure-material-onsurface-rgb: grey;
 }
 
 body,
@@ -14,7 +12,6 @@ html {
 .material-select,
 .material-textfield {
     position: relative;
-    margin: .5rem 0;
     display: flex;
     align-items: center;
 }
@@ -26,10 +23,10 @@ html {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-color: white;
+    background: #fff;
     color: gray;
-    padding: 0 0.3rem;
-    margin: 0 0.5rem;
+    padding: 0 .2rem;
+    margin: 0 .6rem;
     transition: .1s ease-out;
     transform-origin: left top;
     pointer-events: none;
@@ -40,27 +37,34 @@ html {
     position: relative;
     font-size: 1rem;
     outline: none;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-radius: 5px;
-    padding: 0.5rem;
+    background: #fff;
+    padding: .7rem;
     transition: 0.1s ease-out;
     width: 100%;
+    font-weight: bold;
 }
 
 .material-select > select:focus,
 .material-textfield > input:focus {
     border-color: #6200EE;
+    font-weight: bold;
 }
 .material-select > select:focus+label,
 .material-textfield > input:focus+label {
     color: #6200EE;
     top: 0;
+    font-weight: bold;
+    font-size: small;
     transform: translateY(-50%) scale(.9);
 }
 
 .material-select > select:not(:placeholder-shown)+label,
 .material-textfield > input:not(:placeholder-shown)+label {
     top: 0;
+    font-size: small;
+    font-weight: bold;
     transform: translateY(-50%) scale(.9);
 }
 
@@ -81,12 +85,16 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .column-container {
     display: flex;
     flex-direction: column;
-    max-width: 20vw;
+    text-align: center;
+    width: 17rem;
 }
 
 .pointer,
@@ -94,20 +102,42 @@ html {
 select {
     cursor: pointer;
 }
-option {
-    padding: 10px;
-}
 
 input[type=submit] {
     color: #fff;
-    background: blue;
+    background: #2a4ea9;
     border: none;
     border-radius: 4px;
     padding: 0.7rem;
 }
 
-.select {
+.header-label {
+    font-size: 1.2rem;
+}
+.login-label {
+    text-align: start;
+}
 
+.vertical-margin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.logo {
+    margin: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+input[type=password] {
+    letter-spacing: .3rem;
+}
+
+a {
+    color: #2a4ea9;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 @media not all and (min-resolution:.001dpcm) {

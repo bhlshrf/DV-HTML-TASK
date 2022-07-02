@@ -12,48 +12,50 @@
 <body>
     <div class="main-container">
         <div class="column-container">
-            <img src="./assets/imgs/devtailor-logo.svg" />
-            
-            <span class="header-label">Let's get started</span>
-
+            <img class="logo" src="./assets/imgs/devtailor-logo.svg" />
+            <span class="header-label vertical-margin">Let's get started</span>
             <form class="column-container" onsubmit="return handelFormSubmit(event)">
                 
-                <div class="material-select">
+                <div class="material-select vertical-margin">
                     <select>
                         <option value="1">Estonia</option>
-                        <option value="2">Estonia</option>
+                        <option value="2">Other Country</option>
                     </select>
                     <label>Country of residence</label>
                 </div>
 
-                <div class="material-textfield">
+                <div class="material-textfield vertical-margin">
                     <input id="email" type='email' placeholder=" " oninput="handleEmailInput()" />
                     <label>Email</label>
                 </div>
 
-                <div class="material-textfield">
+                <div class="material-textfield vertical-margin">
                     <input id="password1" type="password" placeholder=" " oninput="handlePassword()" />
                     <label>Created your password</label>
                     <span onclick="togglePassword(this)">show</span>
                 </div>
 
-                <div class="material-textfield">
+                <div class="material-textfield vertical-margin">
                     <input id="password2" type="password" placeholder=" " oninput="handlePassword()" />
                     <label>Re-enter password</label>
                     <span onclick="togglePassword(this)">show</span>
                 </div>
 
-                <label class="pointer">
+                <label class="pointer vertical-margin">
                     <input type="checkbox" />
-                    I agree with <a href="#">Terms & Conditions</a>
+                    I agree with <a href="#" class="bold">Terms & Conditions</a>
                 </label>
 
                 <input type="submit" value="Sign Up" class="pointer" />
             </form>
 
-            <a href="#">Log In</a>
+            <div class="login-label vertical-margin bold">
+                <a href="#">Log In</a>
+            </div>
         </div>
-        <a href="#">Customer Support</a>
+        <div>
+            <a href="#">Customer support</a>
+        </div>
     </div>
 </body>
 
